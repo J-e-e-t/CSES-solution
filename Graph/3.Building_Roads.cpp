@@ -4,6 +4,10 @@ Byteland has n cities, and m roads between them. The goal is to construct new ro
 Your task is to find out the minimum number of roads required, and also determine which roads should be built.
 */
 
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
+
 void dfs(ll node,vector<ll> &vis,ll comp,vector<vector<ll>> &graph,vector<ll> &nodes){
     nodes[node] = comp;
     vis[node] = 1;

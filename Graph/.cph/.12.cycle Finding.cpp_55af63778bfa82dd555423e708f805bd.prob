@@ -1,0 +1,1 @@
+{"name":"Local: 12","url":"c:\\Users\\Lenovo\\Desktop\\CSES solution\\Graph\\12.cycle Finding.cpp","tests":[{"id":1671259833848,"input":"4 5\n1 2 1\n2 4 1\n3 1 1\n4 1 -3\n4 3 -2","output":"YES\n1 2 4 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Lenovo\\Desktop\\CSES solution\\Graph\\12.cycle Finding.cpp","group":"local","local":true}
