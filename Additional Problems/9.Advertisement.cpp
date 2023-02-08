@@ -52,24 +52,37 @@ using namespace std;
 
 class Solution {
 public:
-	int largestRectangleArea(vector<int>& heights) {
+	long long largestRectangleArea(vector<long long>& heights) {
 		int n = heights.size();
 		if (!n) return 0;
-		stack<int> stck;
-		vector<int> area(n, 0);
+		stack<long long> stck;
+		vector<long long> area(n, 0);
 		for (int i = 0; i < n; i++) {
 			while (stck.size() && heights[stck.top()] >= heights[i]) stck.pop();
-			int width = i - (stck.size() ? stck.top() : -1);
+			long long width = i - (stck.size() ? stck.top() : -1);
 			area[i] += width * heights[i];
 			stck.push(i);
 		}
 		while (stck.size()) stck.pop();
 		for (int i = n - 1; ~i; i--) {
 			while (stck.size() && heights[stck.top()] >= heights[i]) stck.pop();
-			int width = (stck.size() ? stck.top() : n) - i;
+			long long width = (stck.size() ? stck.top() : n) - i;
 			area[i] += (width - 1) * heights[i];
 			stck.push(i);
 		}
 		return *max_element(area.begin(), area.end());
 	}
 };
+
+int main(){
+	int n;
+	cin>>n;
+
+	vector<long long> heights(n);
+
+	for(int i=0;i<n;i++){
+		cin>>heights[i];
+	}
+	Solution* obj = new Solution();
+	cout<<obj->largestRectangleArea(heights);
+}
