@@ -1,7 +1,7 @@
 /*
-Your task is to efficiently calculate values ab modulo 109+7.
+Your task is to efficiently calculate values a^b modulo 109+7.
 
-Note that in this task we assume that 00=1.
+Note that in this task we assume that 0^0=1.
 
 Input
 
@@ -11,14 +11,14 @@ After this, there are n lines, each containing two integers a and b.
 
 Output
 
-Print each value ab modulo 109+7.
+Print each value ab modulo 1e9+7.
 
 Constraints
 
-    1≤n≤2⋅105
+    1≤n≤2⋅1e5
 
 
-0≤a,b≤109
+0≤a,b≤1e9
 
 
 Example

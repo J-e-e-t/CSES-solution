@@ -15,10 +15,10 @@ For each integer, print the number of its divisors.
 
 Constraints
 
-    1≤n≤105
+    1≤n≤1e5
 
 
-1≤x≤106
+1≤x≤1e6
 
 
 Example
