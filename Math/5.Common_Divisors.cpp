@@ -13,10 +13,10 @@ Print the maximum greatest common divisor.
 
 Constraints
 
-    2≤n≤2⋅105
+    2≤n≤2⋅1e5
 
 
-1≤xi≤106
+1≤xi≤1e6
 
 
 Example

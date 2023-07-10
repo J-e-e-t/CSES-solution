@@ -13,7 +13,7 @@ Print ∑ni=1σ(i) modulo 109+7.
 
 Constraints
 
-    1≤n≤1012
+    1≤n≤1e12
 
 
 Example
@@ -23,6 +23,7 @@ Input:
 
 Output:
 21*/
+
 
 
 /*

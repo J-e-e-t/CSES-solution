@@ -85,7 +85,7 @@ int main() {
 	dist[1] = 0; q.push(1);
 	while (!q.empty()) {
 		int x = q.front(); q.pop();
-		for (int t: adj[x]) if (dist[t] == INT_MAX) {
+		for (int t: adj[x]) if (dist[t] == INT_MAX) { //dist[t] == INT_MAX is important
 			dist[t] = dist[x]+1; parent[t] = x;
 			q.push(t);
 		}

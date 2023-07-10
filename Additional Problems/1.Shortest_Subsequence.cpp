@@ -25,6 +25,20 @@ Output:
 AAA*/
 
 
+/*
+Suppose we partition the string into   contiguous subsegments such that the letters GCAT all appear at least once each in each partition. Then, it is clear that all  
+
+-character strings appear as subsequences.
+
+We can construct such a partition greedily. Find the shortest prefix of the string that contains all characters GCAT, make that one subsegment, then recurse on the remaining string. Note that this might actually partition it into  
+
+subsegments, where the last subsegment is ``incomplete''. The last character in each subsegment (besides the incomplete subsegment) also appears exactly once in that subsegment; greedily, if it appeared earlier in the subsegment, then we could have ended this partition earlier.
+
+If  
+is maximal, then we can show that there exists a   length string that is not a subsequence. How? We can explicitly construct it as the last character in each of the partitions, plus some character not in the incomplete subsegment (or any character, if there is no incomplete subsegment). 
+*/
+
+
 #include<bits/stdc++.h>
 using namespace std;
 

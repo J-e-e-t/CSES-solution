@@ -45,9 +45,9 @@ int N, M, a, b;
 bool possible, vis[maxN], team[maxN];
 vector<int> G[maxN];
 
-void dfs(int u, int p = 0){
+void dfs(int u, int p = 0){  //parent is important so that we skip biderection moving
     for(int v : G[u]){
-        if(v != p){
+        if(v != p){ // important
             if(!vis[v]){
                 team[v] = !team[u];
                 vis[v] = true;

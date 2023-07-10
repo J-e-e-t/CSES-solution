@@ -29,7 +29,7 @@ void solve(){
 
     ll a,b;
 
-    vector<ll> nodes(n+1,0);
+    vector<ll> nodes(n+1,0); //to store in which component the particular node belongs 
     vector<ll> vis(n+1,0);
 
     vector<vector<ll>> graph(n+1);
